@@ -1,0 +1,82 @@
+{
+  "name": "vue-bundle-template",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@8.3.0",
+  "description": "add description",
+  "author": "add author",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/productdevbook",
+  "homepage": "https://github.com/productdevbookcom/vue-bundle-template",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/productdevbookcom/vue-bundle-template.git"
+  },
+  "bugs": "https://github.com/productdevbookcom/vue-bundle-template/issues",
+  "keywords": [
+    "add keywords"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.ts",
+      "require": "./dist/module.cjs",
+      "import": "./dist/module.mjs"
+    },
+    "./utils": "./dist/utils.mjs"
+  },
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=8"
+  },
+  "scripts": {
+    "dev": "pnpm nuxi dev playground-nuxt",
+    "build": "pnpm dev:prepare && pnpm nuxt-module-build",
+    "dev:build": "nuxi build playground-nuxt",
+    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground-nuxt",
+    "play": "pnpm --filter playground-nuxt dev",
+    "play:vue": "pnpm --filter playground-vue dev",
+    "prepublishOnly": "pnpm run build",
+    "release": "pnpm build && bumpp --commit --push --tag && pnpm publish",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "pnpm dev:prepare && vitest",
+    "test:watch": "pnpm dev:prepare && vitest --watch",
+    "coverage": "vitest run --coverage"
+  },
+  "peerDependencies": {
+    "vue": "=>3.3.0"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.5.1",
+    "defu": "^6.1.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.39.1",
+    "@nuxt/module-builder": "^0.3.1",
+    "@nuxt/schema": "^3.5.1",
+    "@nuxt/test-utils": "^3.5.1",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vitest/coverage-c8": "^0.31.1",
+    "@vue-macros/volar": "^0.9.8",
+    "@vue/test-utils": "^2.3.2",
+    "bumpp": "^9.1.0",
+    "eslint": "^8.41.0",
+    "jsdom": "^22.0.0",
+    "typescript": "^5.0.4",
+    "unbuild": "^1.2.1",
+    "unconfig": "^0.3.7",
+    "unplugin-vue-macros": "^2.1.7",
+    "vite": "^4.3.8",
+    "vite-plugin-dts": "^2.3.0",
+    "vitest": "^0.31.1",
+    "vue": "^3.3.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

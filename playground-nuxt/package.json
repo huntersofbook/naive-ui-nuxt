@@ -1,0 +1,8 @@
+{
+  "name": "my-module-playground",
+  "private": true,
+  "dependencies": {
+    "nuxt": "^3.5.1",
+    "vue-bundle-template": "workspace:*"
+  }
+}
