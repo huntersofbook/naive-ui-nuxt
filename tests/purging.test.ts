@@ -4,7 +4,7 @@ import { setup, useTestContext } from '@nuxt/test-utils'
 
 describe('module', async () => {
   await setup({
-    rootDir: fileURLToPath(new URL('../../playground-nuxt', import.meta.url)),
+    rootDir: fileURLToPath(new URL('../playground-nuxt', import.meta.url)),
     build: true,
   })
 

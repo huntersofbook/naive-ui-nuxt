@@ -47,7 +47,7 @@
     "release": "pnpm build && bumpp --commit --push --tag && pnpm publish",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "pnpm dev:prepare && vitest",
+    "test": "pnpm build && vitest",
     "test:watch": "pnpm dev:prepare && vitest --watch",
     "coverage": "vitest run --coverage"
   },
