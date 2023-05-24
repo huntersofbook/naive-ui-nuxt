@@ -30,4 +30,7 @@ export default defineNuxtConfig({
       },
     },
   },
+  tailwindcss: {
+    configPath: '~/tailwind.config.ts',
+  },
 })

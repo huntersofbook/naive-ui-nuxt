@@ -10,6 +10,9 @@ import { NButton, NConfigProvider, NGlobalStyle } from 'naive-ui'
       <NButton type="success">
         Default
       </NButton>
+      <div class="bg-red-500">
+        asd
+      </div>
     </div>
   </NConfigProvider>
 </template>
