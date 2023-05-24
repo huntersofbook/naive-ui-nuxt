@@ -1,6 +1,18 @@
 export default defineNuxtConfig({
-  modules: ['../src/module'],
-  myModule: {},
+  modules: [
+    '../src/module',
+    '@nuxtjs/tailwindcss',
+  ],
+
+  naiveUI: {
+    themeOverrides: {
+      common: {
+        primaryColor: '#ff0000',
+        primaryColorHover: '#8b0000',
+      },
+    },
+  },
+
   typescript: {
     tsConfig: {
       include: [
@@ -9,12 +21,10 @@ export default defineNuxtConfig({
         '../../src/**/*.ts',
       ],
       compilerOptions: {
+        resolveJsonModule: true,
         paths: {
-          '~/vue/*': [
-            '../playground-vue/*',
-          ],
-          '~/vue': [
-            '../playground-vue',
+          '~/nuxt/*': [
+            '../playground-nuxt/*',
           ],
         },
       },

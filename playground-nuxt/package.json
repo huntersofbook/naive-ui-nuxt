@@ -2,7 +2,10 @@
   "name": "my-module-playground",
   "private": true,
   "dependencies": {
-    "nuxt": "^3.5.1",
-    "vue-bundle-template": "workspace:*"
+    "@huntersofbook/naive-ui-nuxt": "workspace:*",
+    "nuxt": "^3.5.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.7.0"
   }
 }

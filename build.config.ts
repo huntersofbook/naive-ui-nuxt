@@ -8,9 +8,6 @@ const externals = [
 ]
 
 export default defineBuildConfig({
-  entries: [
-    './src/utils',
-  ],
   clean: true,
   declaration: true,
   externals,

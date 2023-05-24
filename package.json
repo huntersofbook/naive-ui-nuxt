@@ -1,28 +1,31 @@
 {
-  "name": "vue-bundle-template",
+  "name": "@huntersofbook/naive-ui-nuxt",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.7.1",
   "packageManager": "pnpm@8.3.0",
-  "description": "add description",
-  "author": "add author",
+  "description": "Nuxt 3 Naive UI library",
+  "author": "Mehmet - productdevbook <hi@productdevbook.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/productdevbook",
-  "homepage": "https://github.com/productdevbookcom/vue-bundle-template",
+  "homepage": "https://github.com/huntersofbook/naive-ui-nuxt",
   "repository": {
     "type": "git",
-    "url": "https://github.com/productdevbookcom/vue-bundle-template.git"
+    "url": "https://github.com/huntersofbook/naive-ui-nuxt.git"
   },
-  "bugs": "https://github.com/productdevbookcom/vue-bundle-template/issues",
+  "bugs": "https://github.com/huntersofbook/naive-ui-nuxt/issues",
   "keywords": [
-    "add keywords"
+    "nuxt 3",
+    "naive",
+    "naive ui",
+    "nuxt 3 module",
+    "plugin"
   ],
   "exports": {
     ".": {
       "types": "./dist/types.d.ts",
       "require": "./dist/module.cjs",
       "import": "./dist/module.mjs"
-    },
-    "./utils": "./dist/utils.mjs"
+    }
   },
   "main": "./dist/module.cjs",
   "types": "./dist/types.d.ts",
@@ -52,8 +55,10 @@
     "vue": "=>3.3.0"
   },
   "dependencies": {
+    "@css-render/vue3-ssr": "^0.15.12",
     "@nuxt/kit": "^3.5.1",
-    "defu": "^6.1.2"
+    "defu": "^6.1.2",
+    "naive-ui": "^2.34.3"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.1",
