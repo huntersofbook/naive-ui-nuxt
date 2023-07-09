@@ -2,7 +2,7 @@
   "name": "@huntersofbook/naive-ui-nuxt",
   "type": "module",
   "version": "1.0.0",
-  "packageManager": "pnpm@8.3.0",
+  "packageManager": "pnpm@8.6.6",
   "description": "Nuxt 3 Naive UI library",
   "author": "Mehmet - productdevbook <hi@productdevbook.com>",
   "license": "MIT",
@@ -52,7 +52,7 @@
     "coverage": "vitest run --coverage"
   },
   "peerDependencies": {
-    "vue": "=>3.3.0"
+    "vue": ">=3.3.0"
   },
   "dependencies": {
     "@css-render/vue3-ssr": "^0.15.12",
