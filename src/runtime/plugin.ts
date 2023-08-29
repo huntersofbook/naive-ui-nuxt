@@ -3,15 +3,16 @@ import { setup } from '@css-render/vue3-ssr'
 import { defineNuxtPlugin } from '#app'
 
 export default defineNuxtPlugin((nuxtApp) => {
-  const { collect } = setup(nuxtApp.vueApp)
-
   nuxtApp.hook('app:mounted', () => {
     const meta = document.createElement('meta')
     meta.name = 'naive-ui-style'
     document.head.appendChild(meta)
   })
 
+  // eslint-disable-next-line n/prefer-global/process
   if (process.server) {
+    const { collect } = setup(nuxtApp.vueApp)
+
     nuxtApp.hook('app:rendered', ({ ssrContext }) => {
       if (!ssrContext)
         return
