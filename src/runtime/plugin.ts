@@ -9,9 +9,9 @@ export default defineNuxtPlugin((nuxtApp) => {
     document.head.appendChild(meta)
   })
 
+  // eslint-disable-next-line n/prefer-global/process
   if (process.server) {
     const { collect } = setup(nuxtApp.vueApp)
-    console.log('setup', collect())
 
     nuxtApp.hook('app:rendered', ({ ssrContext }) => {
       if (!ssrContext)
