@@ -15,7 +15,7 @@ importers:
         specifier: ^0.15.12
         version: 0.15.12(vue@3.3.4)
       '@nuxt/kit':
-        specifier: ^3.6.2
+        specifier: ^3.7.0
         version: 3.7.0(rollup@3.28.1)
       defu:
         specifier: ^6.1.2
@@ -31,13 +31,13 @@ importers:
         specifier: ^0.5.0
         version: 0.5.0(@nuxt/kit@3.7.0)(nuxi@3.7.2)(typescript@5.2.2)
       '@nuxt/schema':
-        specifier: ^3.6.2
+        specifier: ^3.7.0
         version: 3.7.0(rollup@3.28.1)
       '@nuxt/test-utils':
-        specifier: ^3.6.2
+        specifier: ^3.7.0
         version: 3.7.0(rollup@3.28.1)(vitest@0.34.3)(vue@3.3.4)
       '@vitejs/plugin-vue':
-        specifier: ^4.2.3
+        specifier: ^4.3.3
         version: 4.3.3(vite@4.4.9)(vue@3.3.4)
       '@vitest/coverage-v8':
         specifier: ^0.34.3
@@ -46,35 +46,35 @@ importers:
         specifier: ^0.14.2
         version: 0.14.2(@vue-macros/reactivity-transform@0.3.22)(rollup@3.28.1)(typescript@5.2.2)(vue@3.3.4)
       '@vue/test-utils':
-        specifier: ^2.4.0
+        specifier: ^2.4.1
         version: 2.4.1(vue@3.3.4)
       bumpp:
-        specifier: ^9.1.1
+        specifier: ^9.2.0
         version: 9.2.0
       eslint:
-        specifier: ^8.44.0
+        specifier: ^8.48.0
         version: 8.48.0
       jsdom:
         specifier: ^22.1.0
         version: 22.1.0
       typescript:
-        specifier: ^5.1.6
+        specifier: ^5.2.2
         version: 5.2.2
       unbuild:
         specifier: ^2.0.0
         version: 2.0.0(typescript@5.2.2)
       unconfig:
-        specifier: ^0.3.9
+        specifier: ^0.3.10
         version: 0.3.10
       unplugin-vue-macros:
-        specifier: ^2.3.5
+        specifier: ^2.4.14
         version: 2.4.14(rollup@3.28.1)(vite@4.4.9)(vue@3.3.4)
       vite:
-        specifier: ^4.4.2
+        specifier: ^4.4.9
         version: 4.4.9(@types/node@20.5.7)
       vite-plugin-dts:
-        specifier: ^3.2.0
-        version: 3.5.2(rollup@3.28.1)(typescript@5.2.2)(vite@4.4.9)
+        specifier: ^3.5.3
+        version: 3.5.3(rollup@3.28.1)(typescript@5.2.2)(vite@4.4.9)
       vitest:
         specifier: ^0.34.3
         version: 0.34.3(jsdom@22.1.0)
@@ -8277,8 +8277,8 @@ packages:
       vscode-uri: 3.0.7
     dev: false
 
-  /vite-plugin-dts@3.5.2(rollup@3.28.1)(typescript@5.2.2)(vite@4.4.9):
-    resolution: {integrity: sha512-iKc851+jdHEoN1ifbOEsoMs+/Zg26PE1EyO2Jc+4apOWRoaeK2zRJnaStgUuJaVaEcAjTqWzpNgCAMq7iO6DWA==}
+  /vite-plugin-dts@3.5.3(rollup@3.28.1)(typescript@5.2.2)(vite@4.4.9):
+    resolution: {integrity: sha512-h94j/+SR1PhLR9jnEtcjZILagE2QZBAV8V1y3T2Ujcet1VI0Et4dZSU1W8fbnp6obB7B3/b8hArqdi2/9HuH+w==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       typescript: '*'
