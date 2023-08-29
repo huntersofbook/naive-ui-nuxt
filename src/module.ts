@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-use-before-define */
 import {
   addComponent,
   addImportsSources,
@@ -45,7 +44,10 @@ export default defineNuxtModule<ModuleOptions>({
     }
 
     nuxt.hook('prepare:types', ({ tsConfig, references }) => {
-      tsConfig.compilerOptions!.types.push('naive-ui/volar')
+      tsConfig ||= {}
+      tsConfig.compilerOptions ||= {}
+      tsConfig.compilerOptions.types ||= []
+      tsConfig.compilerOptions.types.push('naive-ui/volar')
       references.push({
         path: resolve(nuxt.options.buildDir, 'types/naive-ui.d.ts'),
       })
