@@ -196,6 +196,7 @@ export default defineNuxtModule<ModuleOptions>({
       tsConfig ||= {}
       tsConfig.compilerOptions ||= {}
       tsConfig.compilerOptions.types ||= []
+
       tsConfig.compilerOptions.types.push('naive-ui/volar')
       references.push({
         path: resolve(nuxt.options.buildDir, 'types/naive-ui.d.ts'),
