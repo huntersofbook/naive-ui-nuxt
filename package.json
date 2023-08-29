@@ -73,7 +73,7 @@
     "eslint": "^8.44.0",
     "jsdom": "^22.1.0",
     "typescript": "^5.1.6",
-    "unbuild": "^1.2.1",
+    "unbuild": "^2.0.0",
     "unconfig": "^0.3.9",
     "unplugin-vue-macros": "^2.3.5",
     "vite": "^4.4.2",
