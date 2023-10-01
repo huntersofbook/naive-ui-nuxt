@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "@huntersofbook/naive-ui-nuxt": "workspace:*",
-    "nuxt": "^3.7.0"
+    "nuxt": "^3.7.4"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.8.0"
