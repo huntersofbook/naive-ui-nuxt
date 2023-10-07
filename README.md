@@ -1,3 +1,15 @@
+# This package has been deprecated
+
+# New Package -> https://github.com/becem-gharbi/nuxt-naiveui
+
+--------------
+--------------
+--------------
+--------------
+--------------
+--------------
+
+
 ![alt text](https://github.com/huntersofbook/naive-ui-nuxt/blob/main/.github/assets/naive-ui-nuxt.png?raw=true)
 
 # Naive UI Nuxt 3 Module
